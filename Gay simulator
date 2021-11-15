@@ -1,0 +1,53 @@
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Rifle.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Shotgun.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Revolver.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Flintlock.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.AK47.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Sword.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Uzi.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.ForceFieldLauncher.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.PlasmaPistol.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Sniper.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.C4.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.SmokeGrenade.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Grenade.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.RocketLauncher.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Flashlight.InventoryEquipRemote
+Event:FireServer(A_1)
+local A_1 = true
+local Event = game:GetService("Players").LocalPlayer.Folder.Binoculars.InventoryEquipRemote
+Event:FireServer(A_1)
+
+--Made by Donate To My Wifi
