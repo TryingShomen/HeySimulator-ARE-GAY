@@ -1,0 +1,218 @@
+--Code For Gui And Theme And Title
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Jailbreak Anti-Gun Interact Bypasser", "BloodTheme")
+--Info
+local Info = Window:NewTab("Infos")
+local Section = Info:NewSection("Info")
+Section:NewTextBox("Creator > Click > : ", "The Owner Of The Gui ALT2EEE", function(txt)
+	print(txt)
+end)
+Section:NewKeybind("Set Your KeyBind", "Set Your KeyBind To Open - Close Your Gui", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+--Equip
+local EquipBypasser = Window:NewTab("Equip Bypasser")
+local Section = EquipBypasser:NewSection("Items To Equip")
+Section:NewLabel("->Weapon<-")
+Section:NewButton("Rifle", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Rifle.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Pistol", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Shotgun", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Shotgun.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Revolver", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Revolver.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Flintlock", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Flintlock.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Ak47", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.AK47.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Sword", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Sword.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Uzi", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Uzi.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("ForcefieldLauncher", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.ForcefieldLauncher.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("PlasmaPistol", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Sniper", "Equip The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewLabel("->Police Misc<-")
+Section:NewButton("Taser", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Taser.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Handcuffs", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Handcuffs.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Road Spike", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.RoadSpike.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewButton("Baton", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Baton.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewLabel("->Swat Misc/Weapon<-")
+Section:NewButton("Shield", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.ShieldSWAT.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equipped the > Weapon <")
+end)
+Section:NewLabel("->Explosive<-")
+Section:NewButton("C4", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.C4.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equiped the > Weapon <")
+end)
+Section:NewButton("Smoke Grenade", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.SmokeGrenade.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Reloaded the > Weapon <")
+end)
+Section:NewButton("Grenade", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Grenade.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equiped the > Weapon <")
+end)
+Section:NewButton("RPG / Rocket Launcher", "Equip The > Explosive <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.RocketLauncher.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equiped the > Weapon <")
+end)
+Section:NewLabel("->Misc<-")
+Section:NewButton("Flashlight", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Flashlight.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equiped the > Weapon <")
+end)
+Section:NewButton("Binoculars", "Equip The > Misc <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Binoculars.InventoryEquipRemote
+    Event:FireServer(A_1)
+    print("Equiped the > Weapon <")
+end)
+--[
+
+
+--Reload
+
+
+--]
+local EquipBypasser = Window:NewTab("Reload Bypasser")
+local Section = EquipBypasser:NewSection("Items To Reload")
+Section:NewLabel("->Weapon<-")
+Section:NewButton("Rifle", "Reload The > Weapon <", function()
+    local A_1 = true
+    local Event = game:GetService("Players").LocalPlayer.Folder.Rifle.Reload
+    Event:FireServer(A_1)
+    print("Reloaded the > Weapon <")
+end)
+    Section:NewButton("Pistol", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("Shotgun", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Shotgun.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("Revolver", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Revolver.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("Flintlock", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Flintlock.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("Ak47", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.AK47.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("Uzi", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Uzi.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("ForcefieldLauncher", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.ForcefieldLauncher.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    Section:NewButton("PlasmaPistol", "Reload The > Weapon <", function()
+        local A_1 = true
+        local Event = game:GetService("Players").LocalPlayer.Folder.Pistol.Reload
+        Event:FireServer(A_1)
+        print("Reloaded the > Weapon <")
+    end)
+    
+    --Key for the GUI IS F2VGvH@mKm65!v?Y4RmGd8Rh69g#?=LRHT2kem7%ThtL7TrKF+^?9aM_x&JwMyqGyvJ-$rN%W92-!%GVn&$AbyX-jd&f4XsNYw#3Td3GUkLKvuPd^^abBHxf%Gks6bejCpL#zK=^+Qc5B9rRuWvCL9?stp%=P7cFpVNJAwYF6tJfESK3an^p!3A2xGs^Q@rusGTkT$gfFk82CtghG8Jq!&X$&#AM#F2^4$y3+zzvHAfXN+mNF9fFbUjw5=UWhWprWyBHy*VpkT7*XpAM8AsLBXV3DCWme$dL&VPxYB5Hr7*VV-Mymr66F@8PnA@XPG+nXncPDRLjLfZh^8nYr7fSbZPk=zBxqBch6B+ASXEa5?4$E7gn=!PEwYyrSnGW#LfQ5w&qRk5kbNSZY$CA*8NMH=bCt3n#xLB5E+e+qPukpt9#YCjTrC4R=3dhJjx48yEt!W?t$u62FS!dJw%e!WUkBtZdYcbVG9e!gNvSaewu%+*D3$Z99*SWH+mJ9W@!3GxHQK+pBwp9@-uNS&S?v_s+qGCU+YUXthkP3u2+Dvq&!jTNB?==@SQ_f=6@K@P-jQ3p2C3kgtm3RH4@jA??kB++w33p+tTQ5GfkSb7GkyjJh^?4R*DLjg9EJcvnGgakX6Qy94SxUCKbjM*JtE+Ac*x8*BN&FeE5bwN_suK_$+r8yw?F%n@AU9Vm9XzA^rtG=Uxb*b!JXw^Kn5u=XPYekSHx5gjwa&FP9Xq=A^bBR57uwh2CjU4Dtm3$B6MN=@2Q4hs-aCNpv2gtqAwy#qRGeSY@-Nk9jHBZ#*yqaehXQQwPFyj$KxW#n8%=MfrxdBXG3Y?=Mxazn?_LD^DtrqB*9mFn8e#b-6E2Fb+_=wUkGr5ek6uSu$5J649?!&=3RKXmSk@Uyax*GaU8vwXwHdKafGkzMqfa@yt&^MsZs7d7@BMYK%s!&^PcN3HNHB$8BxpGPpR*h4f%&%rGgds$NemNZM2#JWZ8CBYe6rd^ra9vPYsJ_*@?FC5_%szP2QBD&KdB&Mqxw7NsREd=5T@m9sS@8k4&-zYd8g4adWA+@XL7w_kBVm5j2Zxe?j&QL7-z_G%gu5d=9F78SjzJ%xveG&cdL5CQ5_MWWJEr2q8%kcpq$#LQB*u%dCeAWf@uyfUmJy!QR#-jGPm%p3A$H@FVH-sA#Bk&?AVDhepBkgn$?6vcA^+7YM9ZbWG*Ev$W*sKT6EQ88sY5N@h*9@-caDPNMrKTzu!??bVPAuM?uN2uRZJG7dn?#Zcy#f^F%#N?3muM*-&L+3u&VdKSerndcZk6T!4r4@*-=dsQp!Bw3R-WAYQv_U&LUs9?!Yq2gckTw4-@+7y6FaKEZKs5J^*gStgD&Lx?W#bLqR6Z-E!MPS4SZX6&w^jyFK+wde3m+*4q7Rv3QAxnGY=v3Lg+P^*Xw_wAZ#Ju8Vxz@ggQ6Ffnm&z^ZTmbvcKw^X$D&mdqF_YeyW5p5teD*dj^+9fMx2*^QS$8uDy@caKDCt@D7xPazxL!TtGs_WZGfKL%*CAW5DwvML_C9UwxA9KufAfAF8++ECx9chepyJqBhkte-kkEz7e#uQnwt8LEyzGqKXt3t@?N4esar^zKqGS?U8nsX6PMw^e5q^Hpwn8tye%pe&EvhE@@+GyCW-!mND8gzteSmcez?pGs=EV7CaFp72dNDX-G$kctj5h2@dMBXpT%yXQCaz*-&JsLv+zNaH%=ZY6*PzPxb2f%NpxRxruFBy3B_^p4LtUv$BPh=RzrA#qsQA2daLAhaUexujrdh3cYKzZJmWSGL9c2?U_$EVJYyxcbj_pP9!v2+gaWq!d@cJ8DmXPyvxc4JEhQM8j3%p*4-8U*7SWT**yE@5+RTz7x5$gYnhu^vQq%?Uw%XgqXaHs4f_*+sC&p=f&sWYxQfmtqc$#Zr8g8=wHz#pqN6z&QRD3YnJEnSQDxan%Z8M?DPasTkR5_JQ4r?jXFU=E%Ffqs&#TGBdSd3^QqgKYGh^XC76*H$DRba&YnHfwe8^_cfaJgje^pQt?L#+wCNp5H%$QJuV9k*Qek&@vjEN!UL9LB
