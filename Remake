@@ -1,0 +1,54 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Meat Hub🥩", "Synapse")
+local Tab = Window:NewTab("Farm")
+local Section = Tab:NewSection("Farm")
+Section:NewLabel("Options")
+Section:NewButton("Farm ONCE", "Farm once", function()
+    local TS = game:GetService("TweenService")
+    local Treasure = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new()})
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.4495659, 20.8932285, -154.473434, 0.994301975, -0.104208507, 0.0224544834, -3.70874176e-09, 0.210641861, 0.977563322, -0.10660027, -0.971993089, 0.209441617)
+    wait(0.03125)
+    local End = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(30), {CFrame = CFrame.new(-42.9882736, 88.3003235, 8816.69531, -0.999683678, -0.00440134853, 0.0247631185, -9.50766044e-09, 0.984569311, 0.17499505, -0.0251512211, 0.174939692, -0.984257877)})
+    End:Play()
+    wait(30)
+    local Treasure = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-52.9403954, -354.350037, 9493.47852, -0.998045862, 0.0527505688, -0.0334945284, 8.92471785e-09, 0.536032259, 0.844197512, 0.0624860451, 0.842547774, -0.534984767)})
+    Treasure:Play()
+    wait(20)
+    local Event = game:GetService("Workspace").ClaimRiverResultsGold
+    Event:FireServer()
+end)
+
+
+Section:NewToggle("Auto Farm", "Farm Until Stopped", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Color = Color3.fromRGB(0,0,0)
+    repeat
+        local TS = game:GetService("TweenService")
+        wait(0.03125)
+        local End = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(30), {CFrame = CFrame.new(-42.9882736, 88.3003235, 8816.69531, -0.999683678, -0.00440134853, 0.0247631185, -9.50766044e-09, 0.984569311, 0.17499505, -0.0251512211, 0.174939692, -0.984257877)})
+        End:Play()
+        wait(30)
+        while true do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+        end
+        local Treasure = TS:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-52.9403954, -354.350037, 9493.47852, -0.998045862, 0.0527505688, -0.0334945284, 8.92471785e-09, 0.536032259, 0.844197512, 0.0624860451, 0.842547774, -0.534984767)})
+        Treasure:Play()
+        wait(20)
+        while true do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+        end
+        local Event = game:GetService("Workspace").ClaimRiverResultsGold
+        Event:FireServer()
+        until game.Players.LocalPlayer.Character.HumanoidRootPart.Color == Color3.fromRGB(255,255,255)
+    else
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Color = Color3.fromRGB(255,255,255)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+    end
+end)
+Section:NewKeybind("GUI Toggle", "nil", Enum.KeyCode.F, function()
+	print("You just clicked the bind")
+end)
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+    v:Disable()
+    end
